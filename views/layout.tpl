@@ -12,6 +12,9 @@
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Typeahead.js & Bootstrap CSS -->
+    <link href="/css/typeahead.js-bootstrap.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="/css/starter-template.css" rel="stylesheet">
 
@@ -20,6 +23,16 @@
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/typeahead.min.js"></script>
+
+    
   </head>
 
   <body>
@@ -51,10 +64,5 @@
     </div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

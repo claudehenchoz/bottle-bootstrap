@@ -86,6 +86,46 @@
 <hr />
 
 
+
+
+
+
+
+
+
+<form role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleTypeahead" placeholder="A planet name..." autocomplete="off" spellcheck="false">
+  </div>
+
+<hr />
+
+  <button type="submit" class="btn btn-default">Submit</button>
+
+</form>
+
+
+<script>
+$('#exampleTypeahead').typeahead([ {
+    name: 'planets',
+    local: [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" ]
+} ]);
+
+
+$('.tt-hint').addClass('form-control');
+
+</script>
+
+
+
+
+
+<hr />
+
+
+
+
+
 <form role="form">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -107,6 +147,8 @@
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+
 
 
 <hr />
