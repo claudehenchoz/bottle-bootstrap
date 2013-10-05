@@ -13,6 +13,16 @@
 
 <div>
 
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+
 <table class="table">
         <thead>
           <tr>
@@ -44,13 +54,15 @@
 </table>
 
 
+</div>
+
 <hr />
 
 
 <!-- Standard gray button with gradient -->
 <button type="button" class="btn btn-default">Default</button>
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-star"></span>Primary</button>
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn-success">Success</button>
 <!-- Contextual button for informational alert messages -->

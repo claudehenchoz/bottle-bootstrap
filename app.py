@@ -15,6 +15,10 @@ def img_static(filename):
 def img_static(filename):
     return static_file(filename, root='./css')
 
+@route('/fonts/<filename>')
+def fonts_static(filename):
+    return static_file(filename, root='./fonts')
+
 @route("/")
 @view("main")
 def hello():
