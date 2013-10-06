@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os
-from bottle import route, run, static_file, template, view
+from bottle import route, run, static_file, template, view, request, post
 
 @route('/js/<filename>')
 def js_static(filename):
@@ -23,6 +23,14 @@ def fonts_static(filename):
 @view("main")
 def hello():
     return dict(title = "Hello", content = "Hello from Python!")
+
+@route('/suggestions.json')
+def returnarray():
+    from bottle import response
+    from json import dumps
+    rv = ['Hello','World','Hallo','Welt']
+    response.content_type = 'application/json'
+    return dumps(rv)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

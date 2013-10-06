@@ -85,44 +85,51 @@
 
 <hr />
 
-
-
-
-
-
-
-
-
 <form role="form">
   <div class="form-group">
-    <input type="text" class="form-control" id="exampleTypeahead" placeholder="A planet name..." autocomplete="off" spellcheck="false">
+    <label for="exampleTypeahead">Typeahead</label>
+    <input type="text" class="form-control" id="typeahead" placeholder="Type something">
   </div>
-
-<hr />
-
-  <button type="submit" class="btn btn-default">Submit</button>
-
 </form>
 
 
 <script>
-$('#exampleTypeahead').typeahead([ {
-    name: 'planets',
-    local: [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" ]
-} ]);
-
+$('#typeahead').typeahead({                              
+  name: 'example',                                                             
+  prefetch: '/suggestions.json'
+}); 
 
 $('.tt-hint').addClass('form-control');
-
 </script>
+<hr />
 
+
+
+<!-- Button trigger modal -->
+  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
 
 
 <hr />
-
-
 
 
 
